@@ -34,5 +34,23 @@ h1 {
     font-weight: bold;
     font-family: "nunito", "sans-serif"; 
     margin-left: 30px;
+    height: 10vh;
     color: wheat;
+}
+
+p {
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "nunito", "sans-serif"; 
+    margin-left: 30px;
+    color:white
+
+
+}
+
+#message-el {
+
+    font-style: italic;
+    font-weight: bold;
 }
