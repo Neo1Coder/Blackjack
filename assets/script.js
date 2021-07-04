@@ -1,21 +1,27 @@
 var firstCard = 10
-var secondCard = 11
+var secondCard = 6
 var hasBlackJack = false
 var isAlive = true
 var message = " "
 var sum = firstCard + secondCard
 var messsageEl = document.getElementById("message-el")
-
-// console.log("messageEl")
-
+var sumEl = document.getElementById("sum-el")
+var cardsEl = document.getElementById("cards-el")
 
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
+
+    sumEl.textContent = "Sum:" + sum
+    cardsEl.textContent = "Cards:" + firstCard + " " + ", " + secondCard
 
     if (sum <= 20) {
-        message = "Do you want to draw a new card"
+        message = "Do you want to draw a new card ?"
     }
     else if (sum === 21) {
-        message = "Whohoo, you've got Blackjack"
+        message = "You've got Blackjack!"
         hasBlackJack = true
     } else {
         message = "You're out of the game"
@@ -26,6 +32,15 @@ function startGame() {
 
 }
 
+
+function newCard() {
+    var newCard2 = 5
+    sum += newCard2
+
+    renderGame()
+
+
+}
 
 
 
