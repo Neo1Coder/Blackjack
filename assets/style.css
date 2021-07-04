@@ -24,7 +24,7 @@ body {
     background-color:darkorange;
     font-weight: bold;
     width: 200px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 
@@ -80,4 +80,5 @@ p {
 
     font-style: italic;
     font-weight: bold;
+    margin-right: 20px;
 }
