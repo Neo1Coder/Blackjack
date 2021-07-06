@@ -1,24 +1,47 @@
-var firstCard = getRandomCard()
-var secondCard = getRandomCard()
-var cards = [firstCard, secondCard]
+var player = {
+    name: "Mustafa: ",
+    Chips: 145
+}
+var cards = []
 var hasBlackJack = false
-var isAlive = true
+var isAlive = false
 var message = " "
-var sum = firstCard + secondCard
+var sum = 0
 var messsageEl = document.getElementById("message-el")
 var sumEl = document.getElementById("sum-el")
 var cardsEl = document.getElementById("cards-el")
+var playerEl = document.getElementById("player-el")
 
 
+playerEl.textContent = player.name + "£" + player.Chips
 
 function getRandomCard() {
+
     var randomNumber = Math.floor(Math.random() * 13) + 1
-    return randomNumber
 
 
+    if (randomNumber > 10) {
+        return 10
+    }
+
+    else if (randomNumber === 1) {
+        return 11
+    }
+
+    else {
+        return randomNumber
+
+    }
 }
 
 function startGame() {
+    isAlive = true
+    var firstCard = getRandomCard()
+    var secondCard = getRandomCard()
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
+
+
     renderGame()
 }
 
@@ -29,7 +52,6 @@ function renderGame() {
     for (i = 0; i < cards.length; i++) {
         cardsEl.textContent = "Cards:" + cards
 
-        // cardsEl.textContent = "Cards:" + cards[0] + " " + ", " + cards[1]
 
     }
 
@@ -48,45 +70,11 @@ function renderGame() {
 
 }
 function newCard() {
-    var newCard2 = getRandomCard()
-    sum += newCard2
-    cards.push(newCard2)
 
-
+    if (isAlive === true && hasBlackJack === false) {
+        var newCard2 = getRandomCard()
+        sum += newCard2
+        cards.push(newCard2)
+    }
     renderGame()
-
-
 }
-
-
-
-
-// if (sum <= 20) {
-//     message = "Do you want to draw a new card"
-// }
-// else if (sum === 21) {
-
-//     message = "Whohoo, you've got Blackjack ! "
-//     hasBlackJack = true
-
-// } else {
-
-//     message = "You're out of the game my friend :S "
-//     isAlive = false
-
-
-// }
-
-// console.log(message)
-
-// var age = 21
-
-// if (age < 21) {
-
-//     console.log("you can not enter the club")
-// }
-
-// else {
-//     console.log("welcome ")
-
-// }
