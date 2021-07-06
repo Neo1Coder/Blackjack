@@ -6,8 +6,8 @@ Highlights of the Game
 - If the user does not have black jack and is "still alive" then he/she can be presented with a new card,
 otherwise the generateNewCard function will cease to work.
 - The user will be prompted with messages depending on the hand they have.
-- the getRandomCard will generate a random card between 1-11.
--Whenever the random number results in number greater then 10 it will evalute to 10, and if the random number results in 1 it will evalute to 11, this is to ensure that the game keeps in line with the rules of black.
+- The getRandomCard function will generate a random card between 1-11.
+- Whenever the random number results in number greater then 10 it will evalute to 10, and if the random number results in 1 it will evalute to 11, this is to ensure that the game keeps in line with the rules of Blackjack.
 
 [Deployed Link](https://neo1coder.github.io/Blackjack/)
 
