@@ -9,8 +9,8 @@ otherwise the generateNewCard function will cease to work.
 - The getRandomCard function will generate a random card between 1-11.
 - Whenever the random number results in number greater then 10 it will evalute to 10, and if the random number results in 1 it will evalute to 11, this is to ensure that the game keeps in line with the rules of Blackjack.
 
-[Deployed Link](https://neo1coder.github.io/Blackjack/)
+[Deployed Link](https://mus-ali1.github.io/Blackjack/)
 
-[Git Hub Repo](https://github.com/Neo1Coder/Blackjack)
+[Git Hub Repo](https://github.com/mus-ali1/Blackjack)
 
 ![website image](./assets/Images/blackjack.png)
